@@ -1,0 +1,16 @@
+<form action = "{% url 'password' %}">
+
+    <select name="length">
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10" selected>10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select> <br>
+    <input type="checkbox" name="alphanum"> Add Numbers <br>
+    <input type="checkbox" name="symbols"> Add Symbols<br>
+    <input type="checkbox" name="capital"> Add CAPS<br>
+    <input type= "submit" value ="Generate Password">
+</form>
